@@ -1,3 +1,4 @@
+![1](https://github.com/user-attachments/assets/6a9cf126-2b4b-43a3-9e56-3795a9c83dfb)
 # Tire Sales Management System
 
 ## Description
