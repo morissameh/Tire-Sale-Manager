@@ -1,8 +1,8 @@
-![1](https://github.com/user-attachments/assets/6a9cf126-2b4b-43a3-9e56-3795a9c83dfb)
 # Tire Sales Management System
 
 ## Description
 This repository contains a Flask web application designed to manage tire sales. It provides functionality for adding sales records, searching through records by various criteria, and displaying all the sales data.
+![1](https://github.com/user-attachments/assets/6a9cf126-2b4b-43a3-9e56-3795a9c83dfb)
 
 ## Features
 - **Add Sale**: Record new tire sales with details such as the tire's serial number, name, and buyer.
