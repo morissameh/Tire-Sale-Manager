@@ -13,7 +13,7 @@ body {
     flex-direction: column; /* Stacks flex items vertically */
     align-items: center; /* Centers flex items horizontally */
     justify-content: center; /* Centers flex items vertically */
-    min-height: 100vh; /* Ensures the body takes at least the full height of the viewport */
+    min-height: 100vh; /* Ensures the body takes at least the full height of the viewport */ 
     box-sizing: border-box; /* Ensures padding and border are included in width and height */ 
 }
 
