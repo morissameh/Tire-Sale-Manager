@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% if type == 'buyer_name' %}
+        <h1 class="main-heading">بحث عن طريق اسم المشترى</h1>
+    {% elif type == 'custom_tire_id' %}
+        <h1 class="main-heading">بحث عن طريق رقم تسلسلى</h1>
+    {% elif type == 'date_sold' %}
+        <h1 class="main-heading">بحث عن طريق تاريخ البيع</h1>
+    {% endif %}
+    
+    {% if results %}
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>رقم الاطار التسلسلى</th>
+                        <th>اسم الاطار</th>
+                        <th>تاريخ البيع</th>
+                        <th>اسم المشترى</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for tire in results %}
+                        <tr>
+                            <td>{{ tire.custom_tire_id }}</td>
+                            <td>{{ tire.tire_name }}</td>
+                            <td>{{ tire.date_sold }}</td>
+                            <td>{{ tire.buyer_name }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    {% else %}
+        <p class="no-results">لا يوجد نتائج من البحث</p>
+    {% endif %}
+{% endblock %}

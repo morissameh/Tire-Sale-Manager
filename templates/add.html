@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="main-heading" >اضافه عمليه بيع جديده</h1>
+<form method="post" style="background-color: #333; padding: 20px; border-radius: 8px;">
+    <div class="form-group">
+        <label for="custom_tire_id" dir="rtl"> رقم الاطار التسلسلى:</label>
+        <input type="id of tire" name="custom_tire_id" id="custom_tire_id" required>
+    </div>
+    
+    <div class="form-group" dir="rtl">
+        <label for="tire_name">اسم الاطار:</label>
+        <input type="text" name="tire_name" id="tire_name" required>
+    </div>
+    
+    <div class="form-group" dir="rtl">
+        <label for="buyer_name">اسم المشترى:</label>
+        <input type="text" name="buyer_name" id="buyer_name" required>
+    </div>
+    <button type="submit" class="submit-button">أضافه</button>
+</form>
+{% endblock %}

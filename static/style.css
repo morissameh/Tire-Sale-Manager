@@ -1,0 +1,222 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('/static/poster of application of tires2_11zon.png'); /* Updated path to the image file */
+    background-size: cover; /* Ensures the image covers the entire body without distorting aspect ratio */
+    background-position: center center; /* Centers the image both horizontally and vertically */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* The image will not scroll with the page, creating a parallax effect */
+    color: #ec0000; /* Sets the text color */
+    margin: 0; /* Removes the default margin */
+    padding: 30px; /* Adds padding to the entire body, consider reducing on smaller screens */
+    display: flex; /* Establishes a flex container */
+    flex-direction: column; /* Stacks flex items vertically */
+    align-items: center; /* Centers flex items horizontally */
+    justify-content: center; /* Centers flex items vertically */
+    min-height: 100vh; /* Ensures the body takes at least the full height of the viewport */
+    box-sizing: border-box; /* Ensures padding and border are included in width and height */
+}
+
+
+.main-heading {
+    color: #ffffff; /* Ensures high contrast text color for readability */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background for better text visibility */
+    padding: 10px 20px; /* Sufficient padding around the text */
+    border-radius: 5px; /* Softens the edges with rounded corners */
+    text-shadow: 1px 1px 2px black; /* Enhances text legibility against complex backgrounds */
+}
+
+
+/* Header Styles */
+header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 180px;
+}
+h1 {
+    font-size: 50px;     /* Set the size of the font */
+    font-weight: bold;   /* Makes font bold */
+    color: #ffffff;      /* Color for the text */
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Ensure the ul spans the full width */
+
+}
+
+nav ul li {
+    margin: 15px; /* Space around each li */
+    flex-grow: 1; /* Grow equally */
+    text-align: center; /* Centers text */
+}
+
+nav a {
+    display: block; /* Ensures the link uses the full space of li */
+    padding: 10px 20px; /* Padding for better click area */
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 40px;
+}
+
+
+/* Style for navigation links as fitting shapes */
+.text-shape {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 4px;
+    border-radius: 20px;
+    display: outside-block;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+.text-shape:hover {
+    background-color: #0056b3;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+/* Styling for form labels */
+label {
+    display: block; /* Each label on a new line */
+    margin-bottom: 15px; /* Spacing below each label */
+    color: #ffffff; /* Text color, assuming a dark background */
+    font-size: 35px; /* Size of the font */
+    font-weight: bold; /* Makes text bold */
+}/* select is for box of date number */
+
+select {
+    width: 150px; /* Width of the select boxes, adjust as necessary */
+    height: 40px; /* Height of the select boxes, adjust for better touch area */
+    font-size: 18px; /* Increase the font size to make selections more readable */
+    padding: 5px 8px; /* Padding inside the select box */
+    margin: 9px; /* Margin around select boxes for spacing */
+}
+.flashes li {
+    padding: 15px 10px; /* Increased padding */
+    margin: 5px auto; /* Centered horizontally with auto margins */
+    border-radius: 30px; /* Rounded corners */
+    text-align: center; /* Centered text */
+    font-size: 30px; /* Larger font size */
+    font-weight: bold; /* Bold font */
+    color: #ffffff; /* White text for high contrast */
+    box-shadow: 0 2px 2px rgba(0,0,0,0.5); /* Enhanced shadow for 3D effect */
+    width: 40%; /* Responsive width */
+    display: block; /* Ensure it's a block element to allow margin auto to work */
+}
+
+
+.flashes .success {
+    background-color: #28a745; /* Bright green for success messages */
+}
+
+.flashes .error {
+    background-color: #dc3545; /* Bright red for error messages */
+}
+
+.no-results {
+    font-size: 50px; /* Larger font size for better visibility */
+    font-weight: bold; /* Bold font for emphasis */
+    color: #ffffff; /* White text color for high contrast against a dark background */
+    text-align: center; /* Center align the text */
+    border: 2px solid #d9534f; /* Solid border */
+    padding: 10px 20px; /* Padding around the text */
+    display: inline-block; /* Allows the border to wrap tightly around the text */
+    margin: 20px auto; /* Adds margin around the element and centers it horizontally */
+    border-radius: 10px; /* Rounded corners for the border */
+    background-color: #d9534f; /* Background color similar to the border color */
+}
+
+
+/* Styling for text input fields */
+input[type="text"] {
+    width: 100%; /* Full width of its container */
+    padding: 15px; /* Increased padding inside the text box for greater height */
+    font-size: 25px; /* Larger font size for better readability */
+    border-radius: 10px; /* Rounded corners for the input field */
+    margin-bottom: 15px; /* Space after each input */
+    box-sizing: border-box; /* Ensures padding does not add to the width */
+    text-align: right; /* Ensures text inside input aligns to the right */
+}
+input[type="id of tire"] {
+    width: 100%; /* Full width of its container */
+    padding: 15px; /* Increased padding inside the text box for greater height */
+    font-size: 25px; /* Larger font size for better readability */
+    border-radius: 10px; /* Rounded corners for the input field */
+    margin-bottom: 15px; /* Space after each input */
+    box-sizing: border-box; /* Ensures padding does not add to the width */
+}
+
+/* Styling for the submit button */
+button[type="submit"] {
+    background-color: #007BFF; /* Blue background */
+    color: white; /* White text */
+    padding: 15px 40px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    font-size: 30px; /* Increased font size for better visibility */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Specific styles for different button sets */
+.nav-group-1 {
+    display: flex; /* Makes this group inline */
+    justify-content: space-between; /* Distributes space between items */
+    width: 100%; /* Full width to contain all three in one line */
+}
+
+.nav-single {
+    width: 100%; /* Each gets full width to form a new line */
+}
+/* Table Styles for Data Presentation */
+table {
+    width: 100%;
+    margin: auto; /* Centering might not visually apply due to overflow, but ensures consistency */
+    border-collapse: collapse; /* Collapses borders between table cells */
+    max-width: 0%; /* Ensures table does not exceed the container width */
+}
+.table-container {
+    width: 100%; /* Ensures the container fits within its parent element */
+    margin: 20px 0; /* Top and bottom margin for spacing */
+}
+
+th, td {
+    padding: 20px;
+    border: 10px solid #c2c2c2;
+    text-align: right;
+    font-size: 35px; /* Increase the font size */
+}
+
+th {
+    padding-left: 170px; /* Additional left padding for headers for emphasis */
+    background-color: #007BFF; /* Styling for header background */
+    color: white; /* Styling for header text color */
+    text-align: center; /* Centers the text horizontally within the cells */
+}
+
+tr:nth-child(even) {
+    background-color: #1d519f;
+}
+
+/* Styling for odd rows */
+tr:nth-child(odd) {
+    background-color: #283750;  /* Light gray color for odd rows */
+}

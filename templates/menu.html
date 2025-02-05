@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+<link rel="stylesheet" href="css/styles.css">
+<h1 class="main-heading">القائمه الرئيسية</h1>
+
+<nav>
+    <ul>
+        <li><a href="{{ url_for('search', type='custom_tire_id') }}" class="text-shape">بحث عن اطار برقم تسلسلى</a></li>
+        <li><a href="{{ url_for('search', type='buyer_name') }}" class="text-shape">بحث عن طريق اسم المشترى</a></li>
+        <li><a href="{{ url_for('search', type='date_sold') }}" class="text-shape">بحث عن طريق تاريخ البيع</a></li>
+    </ul>
+</nav>
+{% endblock %}

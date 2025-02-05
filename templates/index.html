@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1 class="main-heading">عرض كل بيانات العملاء</h1>
+<table>
+    <thead>
+        <tr>
+            <th>رقم الاطار التسلسلى</th>
+            <th>اسم الاطار</th>
+            <th>تاريخ البيع</th>
+            <th>اسم المشترى</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for tire in tires %}
+        <tr>
+            <td>{{ tire.custom_tire_id }}</td>
+            <td>{{ tire.tire_name }}</td>
+            <td>{{ tire.date_sold }}</td>
+            <td>{{ tire.buyer_name }}</td>
+        </tr>
+        {% else %}
+        <tr><td colspan="4">.لا يوجد بيانات متاحه</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
